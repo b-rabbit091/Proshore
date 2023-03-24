@@ -1,0 +1,130 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formInputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    margin-bottom: 1rem;
+  }
+  
+  .label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #0077cc;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .batteries {
+    margin-bottom: 2rem;
+  }
+  
+  .batteriesTitle {
+    margin-bottom: 1rem;
+  }
+  
+  .batteriesList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .batteriesItem {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .nameContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .batteryName {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .removeButton {
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  
+  .batteryDetails {
+    display: block;
+  }
+  
+  .batteryDetail {
+    font-size: 1rem;
+  }
+  
+  .batteryLabel {
+    font-weight: bold;
+    margin-right: 0.25rem;
+  }
+  
+  .submit {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #009900;
+    color: white;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  .search-button-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
+  }
+  
