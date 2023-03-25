@@ -1,2 +1,1 @@
-# Proshore
-Proshore Assessment
+The front-end project is inside the folder project.
