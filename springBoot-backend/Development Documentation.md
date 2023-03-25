@@ -89,7 +89,7 @@ This is the implementation of the interface "BatteryService" that provides the b
 This service is responsible for saving and retrieving battery details from the database. 
 It uses the BatteryRepository to perform database operations.
 
-### 4.ii Detailed Documentation:
+### 4.ii Annotations and Methods Used:
 
 *  __@Service__ : This annotation indicates that the class is a Spring service component. It allows the class to be automatically discovered and registered as a bean in the Spring container during component scanning.
 
