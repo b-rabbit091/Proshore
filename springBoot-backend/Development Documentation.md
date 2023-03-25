@@ -108,3 +108,23 @@ It uses the BatteryRepository to perform database operations.
 * __try-catch blocks__ : These are the exception handling blocks that catch and handle exceptions that may occur during the execution of the business logic in the service implementation. They catch different exceptions and throw custom exceptions with specific error messages to inform the user of the error that occurred.
 
 In summary, the BatteryServiceImpl class provides the implementation of the business logic for battery operations. It uses the BatteryRepository to perform database operations and the ServiceUtility to validate request data and calculate aggregated values of batteries. The class is a Spring service component and is responsible for saving and retrieving battery details from the database.
+  
+  ---
+  ## 5. Utility Class - ServiceUtility
+
+ ### 5.i Overview
+  
+ServiceUtility is a separate class that contains functions required by BatteryServiceImpl. Rather than coding all methods related to the Service class in one file, ServiceUtility provides a modular approach by defining only the functions that the Service class requires to operate. For example, when the Service class is saving batteries, ServiceUtility validates the request to ensure it is valid before saving.
+  
+ ### 5.ii Annotations and Methods Used:
+  
+  * __calculateAggregatedValueOfBatteries(List<Battery> batteries)__  This method takes a list of Battery objects as input, calculates and returns aggregated values like total count of batteries, battery names sorted in alphabetical order, total capacity of all batteries, and average capacity of all batteries.
+
+* __validatePostcodeRange(String startPostcode, String endPostcode)__ : This method takes start and end postcode as input and validates if they are null or have length different than 4. If the validation fails, it throws an IllegalArgumentException.
+
+* __validateBatteryRequest(List<Battery> batteries, BatteryRepository batteryRepository)__ : This method takes a list of Battery objects and BatteryRepository object as input and validates the request body for battery. It checks if the request body is empty, if the battery name is empty, if the battery name already exists, if the postcode is 4 characters long, and if the battery capacity is greater than 0. If any validation fails, it throws an InvalidRequestBodyException or BatteryWithNameExistException.
+
+* __checkIfIdAlreadyExist(String name, BatteryRepository batteryRepository)__ : This method takes a battery name and BatteryRepository object as input and checks if a battery with the given name already exists in the repository. If the battery exists, it returns true, otherwise false.
+
+Note: All the methods in this class are static and can be accessed without creating an object of the class.
+ 
